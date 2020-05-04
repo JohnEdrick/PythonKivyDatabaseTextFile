@@ -1,0 +1,38 @@
+<Root>:
+    name:name
+    email:email
+    FloatLayout:
+        Label:
+            pos_hint:{"x":0.25,"top":0.98}
+            size_hint:0.5,0.07
+            font_size:28
+            text:"FULL NAME"
+        TextInput:
+            id:name
+            pos_hint:{"x":0.25,"top":0.9}
+            size_hint:0.5,0.07
+            multiline: False
+            halign: 'center'
+            valign: 'middle'
+            font_size:22
+        Label:
+            pos_hint:{"x":0.25,"top":0.78}
+            size_hint:0.5,0.07
+            font_size:28
+            text:"EMAIL"
+        TextInput:
+            id:email
+            pos_hint:{"x":0.25,"top":0.7}
+            size_hint:0.5,0.07
+            multiline: False
+            halign: 'center'
+            valign: 'middle'
+            font_size:22
+
+        Button:
+            id: btn1
+            pos_hint:{"x":0.25,"top":0.3}
+            text: "Submit"
+            size_hint: 0.5,0.1
+            on_press: root.press()
+
